@@ -6,7 +6,13 @@ An easy, object-oriented implementation of the classic Rock Paper Scissors game 
 
 ```bash
 # Build and run the game
+### Automated Tournament (100 rounds)
+
 mvn clean compile exec:java -Dexec.mainClass="rps.RockPaperScissors"
+
+```run from bash with java command
+java -cp target/classes rps.RockPaperScissors
+```
 
 # Run all tests
 mvn clean test
@@ -22,7 +28,7 @@ mvn clean test jacoco:report && open target/site/jacoco/index.html
 
 ### Automated Tournament (100 rounds)
 ```bash
-java -cp out rps.RockPaperScissors
+java -cp target/classes rps.RockPaperScissors
 ```
 This runs 100 rounds between AutoPaper (always plays paper) and Computer (random moves), displaying final statistics.
 
